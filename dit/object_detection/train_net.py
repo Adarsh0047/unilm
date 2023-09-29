@@ -86,8 +86,8 @@ def main(args):
     register_coco_instances(
         "annots-train",
         {},
-        "annots/train.json",
-        "annots/images"
+        "/content/content/annots/train.json",
+        "/content/content/annots/images"
     )
     register_coco_instances(
         "annots-val",
