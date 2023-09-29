@@ -87,13 +87,13 @@ def main(args):
         "annots-train",
         {},
         "/content/content/annots/train.json",
-        "/content/content/annots/images"
+        "/content/content/annots/"
     )
     register_coco_instances(
         "annots-val",
         {},
-        "annots/test.json",
-        "annots/images"
+        "/content/content/annots/test.json",
+        "/content/content/annots/"
     )
 
     cfg = setup(args)
