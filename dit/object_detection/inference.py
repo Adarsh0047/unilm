@@ -62,7 +62,7 @@ def main():
     if cfg.DATASETS.TEST[0]=='icdar2019_test':
         md.set(thing_classes=["table"])
     else:
-        md.set(thing_classes=["text","title","list","table","figure"])
+        md.set(thing_classes=["bibref", "bullet_points", "figures", "footers", "formula", "header", "headings", "page_number", "paragraphs", "subheadings", "table"])
 
     output = predictor(img)["instances"]
     v = Visualizer(img[:, :, ::-1],
